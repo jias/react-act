@@ -18,6 +18,49 @@ var FancyCheckbox = React.createClass({displayName: "FancyCheckbox",
 React.render(
   React.createElement(FancyCheckbox, {checked: true, onClick: console.log.bind(console), title: "标题"}, 
     "Hello world!"
-  ),
-  document.body
+  )
+  ,
+  document.getElementById('d1')
 );
+
+var ControlledInput = React.createClass({displayName: "ControlledInput",
+  getInitialState: function() {
+    return {value: 'Hello!'};
+  },
+  handleChange: function(event) {
+    // validate
+    this.setState({value: event.target.value.substr(0, 10)});
+  },
+  render: function() {
+    var value = this.state.value;
+    return React.createElement("input", {type: "text", value: value, onChange: this.handleChange});
+  }
+});
+
+var UncontrolledInput = React.createClass({displayName: "UncontrolledInput",
+  getInitialState: function() {
+    return {value: 'Hello!'};
+  },
+  handleChange: function(event) {
+    // validate
+    this.setState({value: event.target.value.substr(0, 10)});
+  },
+  render: function() {
+    var value = this.state.value;
+    return React.createElement("input", {type: "text", defaultValue: value, onChange: this.handleChange});
+  }
+});
+
+React.render(
+  React.createElement("div", null, 
+  "ControlledInput: ", React.createElement(ControlledInput, null), React.createElement("br", null), 
+  "UncontrolledInput: ", React.createElement(UncontrolledInput, null)
+  ),
+  document.getElementById('d2')
+);
+
+
+
+
+
+
