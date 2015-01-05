@@ -40,10 +40,22 @@
 * [webpack](http://webpack.github.io/)
 * [flux](http://fluxxor.com/what-is-flux.html)
 
+## 基于React实现的UI
+
+* [React.js powered UI framework for developing beautiful hybrid mobile apps.](http://touchstonejs.io/)
+* [React Hackathon toolkit](https://github.com/petehunt/ReactHack)
+* [react-touch](https://github.com/petehunt/react-touch)
+
+## 比较好的React教程
+
+* [Removing User Interface Complexity, or Why React is Awesome](http://jlongster.com/Removing-User-Interface-Complexity,-or-Why-React-is-Awesome)
+
 ## 其他
 
 * [MDN Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
   - [Spread operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator) React中`{...props}`写法的来源
+* [HTML5shim](https://github.com/aFarkas/html5shiv)
+* [console-polyfill](https://github.com/paulmillr/console-polyfill/blob/master/index.js)
 
 ## Offline Transform
 
