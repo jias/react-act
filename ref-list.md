@@ -45,6 +45,7 @@
 * [React.js powered UI framework for developing beautiful hybrid mobile apps.](http://touchstonejs.io/)
 * [React Hackathon toolkit](https://github.com/petehunt/ReactHack)
 * [react-touch](https://github.com/petehunt/react-touch)
+* [widgets](http://jquense.github.io/react-widgets/docs/#intro)
 
 ## 比较好的React教程
 
