@@ -1,5 +1,7 @@
 # Going big with React
 
+从外界的听到的关于它的传言都是有误导的，React根本不是什么mvvm框架，只是带有丰富功能的，类似component概念的，具有良好生命周期设计的，可以通过JSX大大提高编码效率的—View，其中功能之一(插件形式)是mvvm而已，但他依然还是个View和其设计及组织View的理念。移动端用这个很是靠谱。
+
 ## React观点
 
 * simple !== familiar
