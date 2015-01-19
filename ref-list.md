@@ -48,10 +48,19 @@
 * [React Hackathon toolkit](https://github.com/petehunt/ReactHack)
 * [react-touch](https://github.com/petehunt/react-touch)
 * [widgets](http://jquense.github.io/react-widgets/docs/#intro)
+* [day picker](http://www.gpbl.org/react-day-picker/)
 
 ## 比较好的React教程
 
 * [Removing User Interface Complexity, or Why React is Awesome](http://jlongster.com/Removing-User-Interface-Complexity,-or-Why-React-is-Awesome)
+* [awesome-react](https://github.com/enaqx/awesome-react) 这是一个react的资料大全 需要自己找精华
+
+## Reactjs VS Angularjs
+
+* [When To Use AngularJS And When You Should Use ReactJS](http://ilikekillnerds.com/2014/10/use-angularjs-use-reactjs/)
+* [BirdWatch: AngularJS vs. ReactJS](http://matthiasnehlsen.com/blog/2014/03/31/birdwatch-with-reactjs/) 老外做的复杂项目的实现比较
+* [Facebook's React vs AngularJS: A Closer Look](http://www.quora.com/Pete-Hunt/Posts/Facebooks-React-vs-AngularJS-A-Closer-Look) 用react和angular实现同样的功能，对比行数，概念
+* [React.js and How Does It Fit In With Everything Else?](http://www.funnyant.com/reactjs-what-is-it/) 对于react的一些思考
 
 ## 其他
 
