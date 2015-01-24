@@ -49,6 +49,8 @@
 * [react-touch](https://github.com/petehunt/react-touch)
 * [widgets](http://jquense.github.io/react-widgets/docs/#intro)
 * [day picker](http://www.gpbl.org/react-day-picker/)
+* [Imager.jsx](https://github.com/oncletom/Imager.jsx) 
+* [Imager.js](https://github.com/BBC-News/Imager.js) responsive image solution
 
 ## 比较好的React教程
 
