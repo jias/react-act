@@ -1,5 +1,5 @@
 var Header = require('./h').Header;
 React.render(
-<Header title="ccc" />,
+<Header title="Hello React" />,
 document.body
 );

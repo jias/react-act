@@ -46,7 +46,7 @@
 
 	var Header = __webpack_require__(1).Header;
 	React.render(
-	React.createElement(Header, {title: "ccc"}),
+	React.createElement(Header, {title: "Hello React"}),
 	document.body
 	);
 

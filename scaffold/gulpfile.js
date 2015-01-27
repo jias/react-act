@@ -16,8 +16,8 @@ var uglify = require('gulp-uglify');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 
-
-gulp.task('pack', function() {
+// 团队不同成员可以添加各自的packXXX的任务，此处供项目初始化demo使用。
+gulp.task('packui', function() {
     gulp.src('src/ui.js')
         .pipe(webpack(webpackConfig))
         // .pipe(uglify())
@@ -32,5 +32,5 @@ gulp.task('watch', function() {
         }
     });
 
-    gulp.watch(['src/**/*.js'], ['pack', reload]);
+    gulp.watch(['src/**/*.js'], ['packui', reload]);
 });
