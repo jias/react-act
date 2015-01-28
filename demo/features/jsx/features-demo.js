@@ -51,10 +51,41 @@ var UncontrolledInput = React.createClass({
   }
 });
 
+// http://facebook.github.io/react/docs/more-about-refs.html
+  var App = React.createClass({
+    getInitialState: function() {
+      return {userInput: ''};
+    },
+    handleChange: function(e) {
+      this.setState({userInput: e.target.value});
+    },
+    clearAndFocusInput: function() {
+      this.setState({userInput: ''}); // Clear the input
+      // We wish to focus the <input /> now!
+      // This code executes after the component is re-rendered
+        this.refs.theInput.getDOMNode().focus();   // Boom! Focused!
+    },
+    render: function() {
+      return (
+        <div>
+          <div onClick={this.clearAndFocusInput}>
+            Click to Focus and Reset
+          </div>
+          <input
+            ref="theInput"
+            value={this.state.userInput}
+            onChange={this.handleChange}
+          />
+        </div>
+      );
+    }
+  });
+
 React.render(
   <div>
-  ControlledInput: <ControlledInput /><br/>
-  UncontrolledInput: <UncontrolledInput />
+  ControlledInput 最多10个字符: <ControlledInput /><br/>
+  UncontrolledInput 长度控制失效: <UncontrolledInput /><br/><br/><br/>
+  演示Refs功能: <br/><App />
   </div>,
   document.getElementById('d2')
 );

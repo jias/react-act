@@ -51,10 +51,41 @@ var UncontrolledInput = React.createClass({displayName: "UncontrolledInput",
   }
 });
 
+// http://facebook.github.io/react/docs/more-about-refs.html
+  var App = React.createClass({displayName: "App",
+    getInitialState: function() {
+      return {userInput: ''};
+    },
+    handleChange: function(e) {
+      this.setState({userInput: e.target.value});
+    },
+    clearAndFocusInput: function() {
+      this.setState({userInput: ''}); // Clear the input
+      // We wish to focus the <input /> now!
+      // This code executes after the component is re-rendered
+        this.refs.theInput.getDOMNode().focus();   // Boom! Focused!
+    },
+    render: function() {
+      return (
+        React.createElement("div", null, 
+          React.createElement("div", {onClick: this.clearAndFocusInput}, 
+            "Click to Focus and Reset"
+          ), 
+          React.createElement("input", {
+            ref: "theInput", 
+            value: this.state.userInput, 
+            onChange: this.handleChange}
+          )
+        )
+      );
+    }
+  });
+
 React.render(
   React.createElement("div", null, 
-  "ControlledInput: ", React.createElement(ControlledInput, null), React.createElement("br", null), 
-  "UncontrolledInput: ", React.createElement(UncontrolledInput, null)
+  "ControlledInput 最多10个字符: ", React.createElement(ControlledInput, null), React.createElement("br", null), 
+  "UncontrolledInput 长度控制失效: ", React.createElement(UncontrolledInput, null), React.createElement("br", null), React.createElement("br", null), React.createElement("br", null), 
+  "演示Refs功能: ", React.createElement("br", null), React.createElement(App, null)
   ),
   document.getElementById('d2')
 );

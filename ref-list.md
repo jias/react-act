@@ -27,6 +27,8 @@
   - Uncontrolled Components: An `<input>` that does not supply a value (or sets it to `null`) is an uncontrolled component. In an uncontrolled `<input>`, the value of the rendered element will reflect the user's input. 
   - `checkbox/radio`使用`defaultChecked`实现`Uncontrolled`
   - `textarea`的值必须使用value属性来设置
+* 重要概念[Refs](http://facebook.github.io/react/docs/more-about-refs.html) 
+* 捕获点击事件 `onClickCapture` 
 
 ```
 // WRONG
@@ -71,6 +73,7 @@
 * [HTML5shim](https://github.com/aFarkas/html5shiv)
 * [console-polyfill](https://github.com/paulmillr/console-polyfill/blob/master/index.js)
 
+
 ## Offline Transform
 
 安装
@@ -83,4 +86,6 @@ npm install -g react-tools
 
 ```
 jsx --watch jsx/ src/
+激活ES7的语法
+jsx --watch --harmony jsx/ src/
 ```
