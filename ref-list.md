@@ -43,6 +43,7 @@
 * [browserify](http://browserify.org/)
 * [webpack](http://webpack.github.io/)
 * [flux](http://fluxxor.com/what-is-flux.html)
+* [react cdn](http://cdnjs.com/libraries/react/)
 
 ## 基于React实现的UI
 
@@ -57,6 +58,7 @@
 ## 比较好的React教程
 
 * [Removing User Interface Complexity, or Why React is Awesome](http://jlongster.com/Removing-User-Interface-Complexity,-or-Why-React-is-Awesome)
+* [Complementary-Tools](https://github.com/facebook/react/wiki/Complementary-Tools#jsx-integrations)
 * [awesome-react](https://github.com/enaqx/awesome-react) 这是一个react的资料大全 需要自己找精华
 
 ## Reactjs VS Angularjs
