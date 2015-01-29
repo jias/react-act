@@ -83,15 +83,14 @@ var UncontrolledInput = React.createClass({
 
 
 
-  var ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
+var ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
 
 var TodoList = React.createClass({
   getInitialState: function() {
     return {items: ['hello', 'world', 'click', 'me']};
   },
   handleAdd: function() {
-    var newItems =
-      this.state.items.concat([prompt('Enter some text')]);
+    var newItems = this.state.items.concat([prompt('Enter some text')]);
     this.setState({items: newItems});
   },
   handleRemove: function(i) {
@@ -107,6 +106,7 @@ var TodoList = React.createClass({
         </div>
       );
     }.bind(this));
+
     return (
       <div>
         <button onClick={this.handleAdd}>Add Item</button>
@@ -122,7 +122,7 @@ React.render(
   <div>
   ControlledInput 最多10个字符: <ControlledInput /><br/>
   UncontrolledInput 长度控制失效: <UncontrolledInput /><br/><br/><br/>
-  演示Refs功能: <br/><App />
+  演示Refs功能: <br/><App /><br/><br/><br/>
   TodoList: <br/><TodoList />
   </div>,
   document.getElementById('d2')
