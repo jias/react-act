@@ -76,6 +76,15 @@
 * [console-polyfill](https://github.com/paulmillr/console-polyfill/blob/master/index.js)
 
 
+## 关于过滤&升级的优雅提示
+
+* https://gist.github.com/sebmarkbage/ae327f2eda03bf165261#
+
+## 可以参考的站点样式
+
+* http://www.thinkmill.com.au/
+
+
 ## Offline Transform
 
 安装
