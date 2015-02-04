@@ -29,12 +29,47 @@
   - `textarea`的值必须使用value属性来设置
 * 重要概念[Refs](http://facebook.github.io/react/docs/more-about-refs.html) 
 * 捕获点击事件 `onClickCapture` 
+* 必须掌握的知识点 [Multiple Components](http://facebook.github.io/react/docs/multiple-components.html)
+* 必须掌握`textarea`的赋值
 
 ```
 // WRONG
 <textarea name="description">This is the description.</textarea>
 // RIGHT
 <textarea name="description" value="This is a description." />
+```
+
+* 必须掌握`select`的赋值
+
+```
+// WRONG
+<select>
+   <option value="foo" selected>Foo</option>
+   <option value="boo">Boo</option>
+</select>
+// RIGHT notice the "value" attribute
+<select value="foo">
+   <option value="foo">Foo</option>
+   <option value="boo">Boo</option>
+</select>
+```
+
+对比事件处理
+
+方法1：使用bind绑定参数
+
+```
+<span onClick={this.handleDelete.bind(this, this.props.id)}>
+    删除
+</span>
+```
+
+方法2：默认传入[event](http://facebook.github.io/react/docs/events.html)对象
+
+```
+<span onClick={this.handleDelete2} data-id={this.props.id}>
+    删除
+</span>
 ```
   
 ## 相关CommonJS工具
