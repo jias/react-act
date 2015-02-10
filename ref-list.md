@@ -95,13 +95,26 @@
 * [Removing User Interface Complexity, or Why React is Awesome](http://jlongster.com/Removing-User-Interface-Complexity,-or-Why-React-is-Awesome)
 * [Complementary-Tools](https://github.com/facebook/react/wiki/Complementary-Tools#jsx-integrations)
 * [awesome-react](https://github.com/enaqx/awesome-react) 这是一个react的资料大全 需要自己找精华
+* [React TODO](http://todomvc.com/examples/react)
 
 ## Reactjs VS Angularjs
+
+定位：
+
+* React：A JAVASCRIPT LIBRARY FOR BUILDING USER INTERFACES
+* Angular：
+
+资料：
 
 * [When To Use AngularJS And When You Should Use ReactJS](http://ilikekillnerds.com/2014/10/use-angularjs-use-reactjs/)
 * [BirdWatch: AngularJS vs. ReactJS](http://matthiasnehlsen.com/blog/2014/03/31/birdwatch-with-reactjs/) 老外做的复杂项目的实现比较
 * [Facebook's React vs AngularJS: A Closer Look](http://www.quora.com/Pete-Hunt/Posts/Facebooks-React-vs-AngularJS-A-Closer-Look) 用react和angular实现同样的功能，对比行数，概念
 * [React.js and How Does It Fit In With Everything Else?](http://www.funnyant.com/reactjs-what-is-it/) 对于react的一些思考
+
+Rating实现对比
+
+* [by Angular](http://www.befundoo.com/university/tutorials/angularjs-directives-tutorial/)
+* [by React](http://www.quora.com/Pete-Hunt/Posts/Facebooks-React-vs-AngularJS-A-Closer-Look)
 
 ## 其他
 
@@ -111,9 +124,12 @@
 * [console-polyfill](https://github.com/paulmillr/console-polyfill/blob/master/index.js)
 
 
-## 关于过滤&升级的优雅提示
+## 细节
 
-* https://gist.github.com/sebmarkbage/ae327f2eda03bf165261#
+* 关于升级的优雅提示 https://gist.github.com/sebmarkbage/ae327f2eda03bf165261#
+* 当`value/onChange`和`valueLink`同时使用的时候，在控制台的提示。
+
+![](value_valueLink.png)
 
 ## 可以参考的站点样式
 
