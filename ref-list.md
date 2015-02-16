@@ -110,6 +110,7 @@
 * [BirdWatch: AngularJS vs. ReactJS](http://matthiasnehlsen.com/blog/2014/03/31/birdwatch-with-reactjs/) 老外做的复杂项目的实现比较
 * [Facebook's React vs AngularJS: A Closer Look](http://www.quora.com/Pete-Hunt/Posts/Facebooks-React-vs-AngularJS-A-Closer-Look) 用react和angular实现同样的功能，对比行数，概念
 * [React.js and How Does It Fit In With Everything Else?](http://www.funnyant.com/reactjs-what-is-it/) 对于react的一些思考
+* SPA实现对比：http://blog.celerity.com/react/flux-from-an-angularjs-perspective
 
 Rating实现对比
 
@@ -131,9 +132,17 @@ Rating实现对比
 
 ![](value_valueLink.png)
 
+## 起步样板库
+
+https://github.com/celerityweb/react-flux-boilerplate
+
 ## 可以参考的站点样式
 
 * http://www.thinkmill.com.au/
+
+## 工具
+
+* https://github.com/reactjs/sublime-react
 
 
 ## Offline Transform
