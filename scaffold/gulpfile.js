@@ -23,32 +23,45 @@ var stylus = require('gulp-stylus');
 // https://github.com/floridoo/gulp-sourcemaps
 var sourcemaps = require('gulp-sourcemaps');
 
-// http://nibstyl.us/docs/
-// https://github.com/tj/nib/blob/master/lib/nib/reset.styl
-var nib = require('nib');
+// https://www.npmjs.com/package/gulp-concat/
+var concat = require('gulp-concat');
 
-// TODO https://www.npmjs.com/package/gulp-concat/
 // TODO https://www.npmjs.com/package/gulp-css-globbing/
-// TODO https://www.npmjs.com/package/gulp-cssimport/
+
+// https://www.npmjs.com/package/gulp-cssimport/
+var cssimport = require("gulp-cssimport");
+
+// https://www.npmjs.com/package/gulp-cssmin
+var cssmin = require('gulp-cssmin');
+
 
 // 团队不同成员可以添加各自的任务，此处供项目初始化demo使用。
 gulp.task('js', function() {
-    gulp.src('src/app.js')
+    gulp.src('src/app/app.js')
         .pipe(webpack(webpackConfig))
         // .pipe(uglify())
         .pipe(gulp.dest('./dist'))
 });
 
-gulp.task('css', function() {
-    gulp.src('./src/**/*.styl')
+gulp.task('stylus', function() {
+    gulp.src(['./src/**/*.styl'])
         .pipe(sourcemaps.init())
         .pipe(stylus())
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('./src'));
+        .pipe(gulp.dest('./dist'));
+});
+
+// 提取css文件的import的内容 && 合并文件
+gulp.task("basecss", function() {
+    gulp.src(["src/base/_import.css"])
+        .pipe(cssimport({}))
+        .pipe(concat('base.css'))
+        .pipe(cssmin())
+        .pipe(gulp.dest("dist/base"));
 });
 
 // watch files for changes and reload
-gulp.task('watch', ['js', 'css'], function() {
+gulp.task('watch', ['js', 'stylus', 'basecss'], function() {
     browserSync({
         server: {
             baseDir: './'
@@ -58,5 +71,10 @@ gulp.task('watch', ['js', 'css'], function() {
     gulp.watch([
         'src/**/*.js',
         'src/**/*.styl'
-    ], ['js', 'css', reload]);
+    ], ['js', 'stylus', function () {
+        setTimeout(function () {
+            reload();
+        }, 400);
+    }]);
 });
+

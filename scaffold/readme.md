@@ -6,24 +6,24 @@
 
 ```
 foo/
-├── lib/ 依赖库
+├── lib/ · · · · · · · · · · · · · · · · 依赖库
 │   ├── react.js
 │   └── ...
-├── src/ 开发源代码
+├── src/ · · · · · · · · · · · · · · · · 开发源代码
 │   ├── mixins/ 
 │   │   ├── xxx.js
 │   │   └── ...
-│   ├── Header/
+│   ├── Header/ · · · · · · · · · · · · Compontent目录
 │   │   ├── Header.js
 │   │   ├── Header.styl
 │   │   ├── Header.css
 │   │   └── Header/ 样式图片目录
 │   └── ...
-├── node_modules/ 开发依赖的npm包
-├── site/ 站点源代码 待定
-├── gulpfile.js 开发配置文件
-├── webpack.config.js 开发配置文件
-├── package.json 项目信息配置文件
+├── dist/ · · · · · · · · · · · · · · · 打包后的文件目录
+├── node_modules/ · · · · · · · · · · · 开发依赖的npm包
+├── gulpfile.js · · · · · · · · · · · · 开发配置文件
+├── webpack.config.js · · · · · · · · · 开发配置文件
+├── package.json  · · · · · · · · · · · 项目信息配置文件
 
 ```
 
@@ -46,7 +46,7 @@ npm install
 
 ## step 3：启动Server，开启React之旅
 
-启动server
+### 启动`server`
 
 ```
 gulp watch
@@ -55,19 +55,41 @@ gulp watch
 上面的命令执行后，会在浏览器自动打开项目根目录下的`index.html`（其他页面可以手动打开）用来实时预览开发效果，
 页面中如果看到`Hello React`，说明你的开发环境已搭建成功。
 
-页面中的`Hello React`是由`src`目录下的两个`demo`文件实现的，分别是`h.js`和`ui.js`，你可以修改他们来验证`watch`和`livereload`功能。
+#### 验证`watch`和`livereload`功能
 
-打开`src/ui.js`，将`Hello React`改成`Hello React UI`，然后保存。
+打开`src/app/app.js`，将`React`改成`UI`，然后保存。
 
 ```
-var Header = require('./h').Header;
-React.render(
-<Header title="Hello React UI" />, // add " UI"
-document.body
-);
+- <HelloWorld world="React"/>
++ <HelloWorld world="UI"/>
 ```
 
-保存后会发现浏览器页面已自动刷新。
+保存后如果浏览器页面能够自动刷新且一切功能正常，则`watch`和`livereload`功能正常。
+
+#### 验证`css sourcemap`功能
+
+目的：在开发过程的调试阶段，让控制台中的样式直接定位到`.styl`文件(而不是`.css`)，方便快速定位。
+
+打开浏览器控制台，将inspect(放大镜)定位到`Hello React`对应的`H1`标签上，如果在`Styles`面板中对应的文件是`HelloWorld.styl`，则`css sourcemap`功能正常。
+
+#### 验证`js sourcemap`功能
+
+目的：在开发过程的调试阶段，让控制台中的`js`断点直接定位到编译前的`jsx`文件，方便快速定位。
+
+保持浏览器控制台为打开状态，在`src/HelloWorld/HelloWorld.js`中添加一个断点，如下：
+
+```
+render: function () {
+    debugger; // 添加这一行验证js sourcemap功能
+    return (
+        <h1>Hello {this.state.world}</h1>
+    )
+}
+```
+
+浏览器刷新后，控制台会自动切换到`sources`面板，如果发现断点停在`HelloWorld.js`文件(而不是停在`index.html`加载的打包后的`app.js`文件)中，则`js sourcemap`功能正常。
+
+> 还可以有第二个方法验证`js sourcemap`功能，即直接在控制台中打断点，但要注意，不是在`dist/app.js`文件中添加断点，而是在`source`面板的`webpack://`目录下，在对应的`jsx`文件中添加断点。
 
 ## step 4：自定义开发配置
 

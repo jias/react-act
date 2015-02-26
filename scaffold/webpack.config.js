@@ -2,7 +2,7 @@ var webpack = require('webpack');
 module.exports = {
     cache: true,
     entry: {
-        ui: './src/ui'
+        app: './src/app/app'
     },
     output: {
         // 这个path配置和pipe.dest()冲突
@@ -11,6 +11,7 @@ module.exports = {
         // path: './dist', 
         filename: "[name].js"
     },
+    devtool: '#inline-source-map',
     module: {
         loaders: [
             {test: /\.js$/, loader: 'jsx-loader'}
