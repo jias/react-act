@@ -14,7 +14,7 @@
 * [JSX和HTML的区别](http://facebook.github.io/react/docs/jsx-gotchas.html) 里面讲到输出html的几种方法
    - [unicode工具](http://www.fileformat.info/info/unicode/char/search.htm) 很好的工具
    - [DOM Differences](http://facebook.github.io/react/docs/dom-differences.html)
-* [TODO: 关于children的key，没明白。](http://facebook.github.io/react/docs/multiple-components.html)
+* [关于children的key，重要](http://facebook.github.io/react/docs/multiple-components.html)
 * [关于复用component](http://facebook.github.io/react/docs/reusable-components.html)
   - propTypes的验证规则
   - Mixin
@@ -116,6 +116,27 @@ Rating实现对比
 
 * [by Angular](http://www.befundoo.com/university/tutorials/angularjs-directives-tutorial/)
 * [by React](http://www.quora.com/Pete-Hunt/Posts/Facebooks-React-vs-AngularJS-A-Closer-Look)
+
+## React-Router
+
+* [各种情况的匹配说明：Path Matching](https://github.com/rackt/react-router/blob/master/docs/guides/path-matching.md)
+* [Route](https://github.com/rackt/react-router/blob/master/docs/api/components/Route.md)
+	
+	```html
+	<!-- `path` defaults to '/' since no name or path provided -->
+<Route handler={App}>
+  <!-- path is automatically assigned to the name since it is omitted -->
+  <Route name="about" handler={About}/>
+  <Route name="users" handler={Users}>
+    <!--
+      note the dynamic segment in the path, and that it starts with `/`,
+      which makes it "absolute", or rather, it doesn't inherit the path
+      from the parent route
+    -->
+    <Route name="user" handler={User} path="/user/:id"/>
+  </Route>
+</Route>
+	```
 
 ## 其他
 
