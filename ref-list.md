@@ -6,6 +6,9 @@
 
 * simple !== familiar
 
+## TODO
+
+* [重要 Streamlining React Elements](http://facebook.github.io/react/blog/2015/02/24/streamlining-react-elements.html)
 
 ## 官方文档
 
@@ -164,6 +167,7 @@ https://github.com/celerityweb/react-flux-boilerplate
 ## 工具
 
 * https://github.com/reactjs/sublime-react
+
 
 
 ## Offline Transform
