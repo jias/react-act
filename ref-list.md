@@ -9,6 +9,8 @@
 ## TODO
 
 * [重要 Streamlining React Elements](http://facebook.github.io/react/blog/2015/02/24/streamlining-react-elements.html)
+* [H5 react-swiper](https://github.com/joakimbeng/react-swiper)
+* [H5 react-tappable](https://github.com/JedWatson/react-tappable) [demo](http://jedwatson.github.io/react-tappable/)
 
 ## 官方文档
 
