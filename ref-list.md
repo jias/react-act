@@ -83,6 +83,7 @@
 * [browserify](http://browserify.org/)
 * [webpack](http://webpack.github.io/)
 * [flux](http://fluxxor.com/what-is-flux.html)
+* [Reflux](https://github.com/spoike/refluxjs)：flux概念的一个优雅实现
 * [react cdn](http://cdnjs.com/libraries/react/)
 
 ## 基于React实现的UI
