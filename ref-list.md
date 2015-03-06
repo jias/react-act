@@ -143,7 +143,10 @@ Rating实现对比
   </Route>
 </Route>
 	```
+	
+## 关于Reflux的相当重要的注意点
 
+* `Component`的生命周期是永远不会重叠，即生命周期和该生命周期的一切属性(props/state/methods)都是一一对应的。当上一个生命周期的方法(比如`addItem`)没有执行完成时，即使`Store`层分发了新的数据，该Component的state数据和从Stroe获取的数据都一定是被触发时所对应的生命周期的数据，而不是新数据。
 ## 其他
 
 * [MDN Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
