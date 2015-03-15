@@ -11,6 +11,8 @@
 * [重要 Streamlining React Elements](http://facebook.github.io/react/blog/2015/02/24/streamlining-react-elements.html)
 * [H5 react-swiper](https://github.com/joakimbeng/react-swiper)
 * [H5 react-tappable](https://github.com/JedWatson/react-tappable) [demo](http://jedwatson.github.io/react-tappable/)
+* [immutable.js](http://facebook.github.io/immutable-js/)
+
 
 ## 官方文档
 
@@ -179,6 +181,7 @@ https://github.com/celerityweb/react-flux-boilerplate
 ## 动态
 
 * https://github.com/emberjs/rfcs/pull/15
+* http://talks.erikbryn.com/htmlbars-emberconf/#/
 
 ## Offline Transform
 
