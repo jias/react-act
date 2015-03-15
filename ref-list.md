@@ -12,6 +12,7 @@
 * [H5 react-swiper](https://github.com/joakimbeng/react-swiper)
 * [H5 react-tappable](https://github.com/JedWatson/react-tappable) [demo](http://jedwatson.github.io/react-tappable/)
 * [immutable.js](http://facebook.github.io/immutable-js/)
+* [Imutable Data and React](http://www.youtube.com/watch?v=I7IdS-PbEgI) Youtube
 
 
 ## 官方文档
