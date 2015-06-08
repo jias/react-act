@@ -79,6 +79,15 @@
     删除
 </span>
 ```
+
+## icon实现
+
+https://lincolnloop.com/blog/svg-sprites-and-icon-systems-are-super/
+https://css-tricks.com/gotchas-on-getting-svg-into-production/
+http://andrewliebchen.github.io/reacticons/
+https://github.com/webpack/webpack/issues/595
+http://jsfiddle.net/3PfcC/
+http://stackoverflow.com/questions/11753485/set-img-src-to-dynamic-svg-element
   
 ## 相关CommonJS工具
 
@@ -101,6 +110,7 @@
 
 ## 比较好的React教程
 
+* [React News](https://github.com/echenley/react-news): using React, RefluxJS, and a Firebase backend.
 * [Removing User Interface Complexity, or Why React is Awesome](http://jlongster.com/Removing-User-Interface-Complexity,-or-Why-React-is-Awesome)
 * [Complementary-Tools](https://github.com/facebook/react/wiki/Complementary-Tools#jsx-integrations)
 * [awesome-react](https://github.com/enaqx/awesome-react) 这是一个react的资料大全 需要自己找精华
