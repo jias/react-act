@@ -79,6 +79,11 @@
     删除
 </span>
 ```
+## webP
+
+* [webp介绍](http://vincentorback.se/blog/using-webp-images/)
+* [gulp-webp](https://www.npmjs.com/package/gulp-webp)
+* []()
 
 ## icon实现
 
