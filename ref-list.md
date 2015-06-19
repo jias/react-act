@@ -89,6 +89,7 @@
 ## 代码质量
 
 * [eslint](http://eslint.org/)
+* [sublimelinter](http://sublimelinter.readthedocs.org/en/latest/index.html)
 
 ## icon实现
 
