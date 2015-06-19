@@ -85,6 +85,11 @@
 * [gulp-webp](https://www.npmjs.com/package/gulp-webp)
 * []()
 
+
+## 代码质量
+
+* [eslint](http://eslint.org/)
+
 ## icon实现
 
 https://lincolnloop.com/blog/svg-sprites-and-icon-systems-are-super/
