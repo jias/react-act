@@ -99,6 +99,10 @@ http://andrewliebchen.github.io/reacticons/
 https://github.com/webpack/webpack/issues/595
 http://jsfiddle.net/3PfcC/
 http://stackoverflow.com/questions/11753485/set-img-src-to-dynamic-svg-element
+
+## icon资源
+
+* [www.flaticon.com](http://www.flaticon.com/) 有svg可以下载
   
 ## 相关CommonJS工具
 
