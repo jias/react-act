@@ -93,16 +93,19 @@
 
 ## icon实现
 
-https://lincolnloop.com/blog/svg-sprites-and-icon-systems-are-super/
-https://css-tricks.com/gotchas-on-getting-svg-into-production/
-http://andrewliebchen.github.io/reacticons/
-https://github.com/webpack/webpack/issues/595
-http://jsfiddle.net/3PfcC/
-http://stackoverflow.com/questions/11753485/set-img-src-to-dynamic-svg-element
+* https://lincolnloop.com/blog/svg-sprites-and-icon-systems-are-super/
+* https://css-tricks.com/gotchas-on-getting-svg-into-production/
+* http://andrewliebchen.github.io/reacticons/
+* https://github.com/webpack/webpack/issues/595
+* http://jsfiddle.net/3PfcC/
+* http://stackoverflow.com/questions/11753485/set-img-src-to-dynamic-svg-element
+* [https://css-tricks.com/svg-sprites-use-better-icon-fonts/](https://css-tricks.com/svg-sprites-use-better-icon-fonts/)
 
 ## icon资源
 
 * [www.flaticon.com](http://www.flaticon.com/) 有svg可以下载
+* [www.freepik.com](http://www.freepik.com/free-icons)
+* [http://fontastic.me/](http://fontastic.me/) 
   
 ## 相关CommonJS工具
 
