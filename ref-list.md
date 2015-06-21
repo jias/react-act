@@ -100,12 +100,14 @@
 * http://jsfiddle.net/3PfcC/
 * http://stackoverflow.com/questions/11753485/set-img-src-to-dynamic-svg-element
 * [https://css-tricks.com/svg-sprites-use-better-icon-fonts/](https://css-tricks.com/svg-sprites-use-better-icon-fonts/)
+* [http://fontastic.me/](http://fontastic.me/) 在线工具
 
 ## icon资源
 
 * [www.flaticon.com](http://www.flaticon.com/) 有svg可以下载
 * [www.freepik.com](http://www.freepik.com/free-icons)
 * [http://fontastic.me/](http://fontastic.me/) 
+* [http://iconmonstr.com/](http://iconmonstr.com/) 这个网站的设计也很大气
   
 ## 相关CommonJS工具
 
