@@ -102,6 +102,7 @@
 * [https://css-tricks.com/svg-sprites-use-better-icon-fonts/](https://css-tricks.com/svg-sprites-use-better-icon-fonts/)
 * [http://fontastic.me/](http://fontastic.me/) 在线工具
 * [http://simurai.com/blog/2012/04/02/svg-stacks/](http://simurai.com/blog/2012/04/02/svg-stacks/)
+* http://iconizr.com/
 
 ## icon资源
 
