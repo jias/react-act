@@ -91,6 +91,11 @@
 * [eslint](http://eslint.org/)
 * [sublimelinter](http://sublimelinter.readthedocs.org/en/latest/index.html)
 
+## svg as img
+
+* [判断浏览器是否支持svgasimg](https://css-tricks.com/test-support-svg-img/)
+* [在浏览器不支持svgasimg的时候，如何降级](https://css-tricks.com/a-complete-guide-to-svg-fallbacks/)
+
 ## icon实现
 
 * https://lincolnloop.com/blog/svg-sprites-and-icon-systems-are-super/
@@ -106,10 +111,10 @@
 
 ## icon资源
 
-* [www.flaticon.com](http://www.flaticon.com/) 有svg可以下载
-* [www.freepik.com](http://www.freepik.com/free-icons)
-* [http://fontastic.me/](http://fontastic.me/) 
-* [http://iconmonstr.com/](http://iconmonstr.com/) 这个网站的设计也很大气
+* [www.flaticon.com](http://www.flaticon.com/) 有svg可以下载 很好很好
+* [www.freepik.com](http://www.freepik.com/free-icons) 搜索的结果都是集合，找起来比较累
+* [http://fontastic.me/](http://fontastic.me/) 也很大气
+* [http://iconmonstr.com/](http://iconmonstr.com/) 这个网站的设计也很大气 icon很少
   
 ## 相关CommonJS工具
 
