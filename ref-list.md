@@ -14,6 +14,16 @@
 * [immutable.js](http://facebook.github.io/immutable-js/)
 * [Imutable Data and React](http://www.youtube.com/watch?v=I7IdS-PbEgI) Youtube
 
+## 代码质量
+
+* [airbnb js编码风格](https://github.com/airbnb/javascript)
+* [airbnb对应的jscs配置](https://github.com/jscs-dev/node-jscs/blob/master/presets/airbnb.json)
+* [jscs的sublime插件](https://github.com/SublimeLinter/SublimeLinter-jscs/)
+
+## 图片
+
+* [img lazy](http://dinbror.dk/blog/blazy/)
+
 
 ## 官方文档
 
@@ -85,6 +95,10 @@
 * [gulp-webp](https://www.npmjs.com/package/gulp-webp)
 * []()
 
+## ES6
+
+* mozilla高质量教程 [es6 in depth](https://hacks.mozilla.org/category/es6-in-depth/)
+
 
 ## 代码质量
 
@@ -95,6 +109,7 @@
 
 * [判断浏览器是否支持svgasimg](https://css-tricks.com/test-support-svg-img/)
 * [在浏览器不支持svgasimg的时候，如何降级](https://css-tricks.com/a-complete-guide-to-svg-fallbacks/)
+* svg好文 [复杂样式实现](http://tympanus.net/codrops/2015/07/16/styling-svg-use-content-css/)
 
 ## icon实现
 
