@@ -203,6 +203,13 @@ Rating实现对比
 
 * `Component`的生命周期是永远不会重叠，即生命周期和该生命周期的一切属性(props/state/methods)都是一一对应的。当上一个生命周期的方法(比如`addItem`)没有执行完成时，即使`Store`层分发了新的数据，该Component的state数据和从Stroe获取的数据都一定是被触发时所对应的生命周期的数据，而不是新数据。
 
+## Flux相关
+
+* [各种flux方案比较](https://github.com/voronianski/flux-comparison)
+* [Introducing Relay and GraphQL译](http://segmentfault.com/a/1190000002570887)
+* [Reflux的中文介绍](http://segmentfault.com/a/1190000002793786)
+* [网文：聊一聊基于Flux的前端系统](http://react.nodejs-china.org/t/flux/615)
+* [网文：理解reflux中的事件结合](http://segmentfault.com/a/1190000002499052)
 
 ## 其他
 
